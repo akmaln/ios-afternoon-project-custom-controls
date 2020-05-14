@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UHQ-hh-WDb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Zck-AS-Ofp">
+            <objects>
+                <navigationController id="UHQ-hh-WDb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tuu-de-S9U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GY4-05-j54" kind="relationship" relationship="rootViewController" id="7S9-BT-Plu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cij-4i-dQn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1056" y="-550"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UPo-LY-shh">
+            <objects>
+                <viewController id="GY4-05-j54" customClass="ViewController" customModule="StarRating" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8oj-sU-fZQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view verifyAmbiguity="ignoreSizes" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AvO-Cy-1vr" customClass="CustomControl" customModule="StarRating" customModuleProvider="target">
+                                <rect key="frame" x="80" y="384" width="274" height="44"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4fI-AU-8FT" firstAttribute="trailing" secondItem="AvO-Cy-1vr" secondAttribute="trailing" constant="60" id="ZbJ-T9-1kF"/>
+                            <constraint firstItem="4fI-AU-8FT" firstAttribute="bottom" secondItem="AvO-Cy-1vr" secondAttribute="bottom" constant="434" id="fFs-mg-Ye4"/>
+                            <constraint firstItem="AvO-Cy-1vr" firstAttribute="leading" secondItem="4fI-AU-8FT" secondAttribute="leading" constant="80" id="mJK-IQ-90H"/>
+                            <constraint firstItem="AvO-Cy-1vr" firstAttribute="top" secondItem="4fI-AU-8FT" secondAttribute="top" constant="296" id="vM8-nq-S0e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4fI-AU-8FT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DPm-A3-LT1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r4r-HE-cp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-330.43478260869568" y="-550.44642857142856"/>
+        </scene>
+    </scenes>
+</document>
